@@ -1,0 +1,5 @@
+# Copyright (c) 2024 J. Westley
+# SPDX-License-Identifier: MIT
+
+config NO_ARROWS
+    def_bool $(shields_list_contains,no_arrows)
