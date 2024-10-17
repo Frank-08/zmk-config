@@ -1,8 +1,9 @@
 file_format: "1"
-id: two_percent_milk
-name: 2% Milk
+id: no_arrows
+name: An arrow key less keyboard
 type: shield
-url: https://github.com/Spaceboards/SpaceboardsHardware/tree/master/Keyboards/2%25%20Milk
-requires: [pro_micro]
+url: https://github.com/frank-08/zmk-no-arrows
+requires: [RP2040]
 features:
   - keys
+  - underglow
