@@ -4,6 +4,6 @@
 if NO_ARROWS
 
 config ZMK_KEYBOARD_NAME
-    default "Arrows are for Chumps"
+    default "What No Arrows"
 
 endif
