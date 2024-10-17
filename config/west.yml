@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: no_arrows
+      url-base: https://github.com/Frank-08/zmk-no-arrows/
   projects:
     - name: zmk
       remote: zmkfirmware
