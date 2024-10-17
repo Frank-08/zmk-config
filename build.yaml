@@ -5,10 +5,10 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-board: [ "adafruit_kb2040" ]
+# board: [ "adafruit_kb2040" ]
 # shield: [ "two_percent_milk" ]
 # board: [ "sparkfun_pro_micro_rp2040" ]
-shield: [ "no-arrows" ]
+# shield: [ "no-arrows" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
@@ -19,3 +19,6 @@ shield: [ "no-arrows" ]
 #     artifact-name: corne_left_with_logging
 #
 ---
+include:
+  - board: adafruit_kb2040
+    shield: no-arrows
