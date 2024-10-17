@@ -4,6 +4,6 @@
 if SHIELD_NO_ARROWS
 
 config ZMK_KEYBOARD_NAME
-    default "What No Arrows"
+    default "Arrows are for Chumps!"
 
 endif
