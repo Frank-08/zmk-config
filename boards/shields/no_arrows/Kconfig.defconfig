@@ -1,7 +1,7 @@
 # Copyright (c) 2024 J. Westley
 # SPDX-License-Identifier: MIT
 
-if NO_ARROWS
+if SHIELD_NO_ARROWS
 
 config ZMK_KEYBOARD_NAME
     default "What No Arrows"
