@@ -21,4 +21,4 @@
 ---
 include:
   - board: adafruit_kb2040
-    shield: no-arrows
+    shield: no_arrows
