@@ -17,34 +17,34 @@
         wakeup-source;
 
         col-gpios
-            = <&pro_micro 1 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 8 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 9 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 10 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 11 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 12 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 13 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 17 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            = <&gpio0 1 GPIO_ACTIVE_HIGH>
+            , <&gpio0 2 GPIO_ACTIVE_HIGH>
+            , <&gpio0 3 GPIO_ACTIVE_HIGH>
+            , <&gpio0 4 GPIO_ACTIVE_HIGH>
+            , <&gpio0 5 GPIO_ACTIVE_HIGH>
+            , <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 7 GPIO_ACTIVE_HIGH>
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0 11 GPIO_ACTIVE_HIGH>
+            , <&gpio0 12 GPIO_ACTIVE_HIGH>
+            , <&gpio0 13 GPIO_ACTIVE_HIGH>
+            , <&gpio0 14 GPIO_ACTIVE_HIGH>
+            , <&gpio0 15 GPIO_ACTIVE_HIGH>
+            , <&gpio0 16 GPIO_ACTIVE_HIGH>
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>
+            , <&gpio0 18 GPIO_ACTIVE_HIGH>
+            , <&gpio0 19 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
-            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
     };
@@ -55,19 +55,23 @@
         compatible = "zmk,matrix-transform";
         columns = <19>; // Length of the "col-gpios" array
         rows = <6>; // Length of the "row-gpios" array
+
+        // --------------------------------------------------------------------------------------------------------------
+        // | ESC | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12                                          |
+        // | ` |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BSPC | NUM | / | * |-         |
+        // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \ |  7  | 8 | 9 | +        |
+        // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER|  4  | 5 | 6 |          |
+        // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT   |  1  | 2 | 3 | ENTER    |
+        // |  CTL  |  CMD  |  ALT  |            SPACE               | ALT | CMD |  FN  | CTRL|     0   | . |          |
+        // ---------------------------------------------------------------------------------------------------------------
+
         map = <
-        //Esc	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12
         RC(0,0)	RC(0,2)	RC(0,3)	RC(0,4)	RC(0,5)	RC(0,7)	RC(0,8)	RC(0,9)	RC(0,10)	RC(0,11)	RC(0,12)	RC(0,13)	RC(0,14)
-        //~ `	! 1	@ 2	# 3	$ 4	% 5	^ 6	& 7	* 8	( 9	) 0	_ -	+ =	Backspace	Num Lock	/	*	-
         RC(1,0)	RC(1,1)	RC(1,2)	RC(1,3)	RC(1,4)	RC(1,5)	RC(1,6)	RC(1,7)	RC(1,8)	RC(1,9)	RC(1,10)	RC(1,11)	RC(1,12)	RC(1,14)	RC(1,15)	RC(1,16)	RC(1,17)	RC(1,18)
-        //Tab	Q	W	E	R	T	Y	U	I	O	P	{ [	] }	| \	7 Home	8 ↑	9 PgUp	+
         RC(2,0)	RC(2,2)	RC(2,3)	RC(2,4)	RC(2,5)	RC(2,6)	RC(2,7)	RC(2,8)	RC(2,9)	RC(2,10)	RC(2,11)	RC(2,12)	RC(2,13)	RC(2,14)	RC(2,15)	RC(2,16)	RC(2,17)	RC(2,18)
-        //Caps Lock	A	S	D	F	G	H	J	K	L	: ;	' "	Enter		4 ←	5	6 →
         RC(3,0)	RC(3,2)	RC(3,3)	RC(3,4)	RC(3,5)	RC(3,6)	RC(3,7)	RC(3,8)	RC(3,9)	RC(3,10)	RC(3,11)	RC(3,12)	RC(3,13)		RC(3,15)	RC(3,16)	RC(3,17)
-        //Shift	Z	X	C	V	B	N	M	< ,	> .	? /		Shift		1 End	2 ↓	3 PgDn	Enter
         RC(4,1)	RC(4,2)	RC(4,3)	RC(4,4)	RC(4,5)	RC(4,6)	RC(4,7)	RC(4,8)	RC(4,9)	RC(4,10)	RC(4,11)	RC(4,12)	RC(4,13)		RC(4,15)	RC(4,16)	RC(4,17)	RC(4,18)
-        //Ctrl	Apple	Alt	Space							Alt	Apple	Menu	Ctrl	0 Ins	. Del
-        RC(5,0)	RC(5,1)	RC(5,3)	RC(5,6)							RC(6,10)	RC(6,11)	RC(6,12)	RC(6,13)	RC(5,16)	RC(5,17)
+        RC(5,0)	RC(5,1)	RC(5,3)	RC(5,6)	RC(6,10)	RC(6,11)	RC(6,12)	RC(6,13)	RC(5,16)	RC(5,17)
         >;
     };
 };
