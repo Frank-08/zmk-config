@@ -81,10 +81,3 @@
         kscan = <&kscan0>;
     };
 };
-
-/ {
-    chosen {
-        zmk,physical-layout = &default_layout;
-        // Other chosen items
-    };
-};

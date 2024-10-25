@@ -22,3 +22,4 @@
 include:
   - board: adafruit_kb2040
     shield: no_arrows
+    snippet: studio-rpc-usb-uart
