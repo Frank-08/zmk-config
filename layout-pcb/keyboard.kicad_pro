@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
+          "drill": 0.0,
           "height": 1.5,
-          "width": 1.5
+          "width": 2.8
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -2800,7 +2800,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "No-Arrows-Keybaord-BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -2862,6 +2862,12 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser",
+          "name": "Mouser",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -2913,6 +2919,14 @@
     [
       "e0cf6e22-5f1c-474f-bc7a-bb6048e02412",
       "Root"
+    ],
+    [
+      "906ec6d1-b156-4e64-b02a-2f4bebc0c3a0",
+      "LED Matrix"
+    ],
+    [
+      "ea5bfb6f-8179-440a-9ba4-af9fc7a0b380",
+      "Controler"
     ]
   ],
   "text_variables": {}
