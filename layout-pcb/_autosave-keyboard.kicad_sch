@@ -3474,6 +3474,12 @@
 		(uuid "78b52018-7f73-490a-aa33-8cf9ed12218e")
 	)
 	(junction
+		(at 466.09 303.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7901de5f-96e1-487b-9b11-6f39bceef952")
+	)
+	(junction
 		(at 49.53 298.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4126,12 +4132,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c579dc83-001e-4acd-bf29-0bd314a1841e")
-	)
-	(junction
-		(at 63.5 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5ca779f-dbd1-4304-b2df-7c7a39dd12ed")
 	)
 	(junction
 		(at 375.92 151.13)
@@ -7655,6 +7655,16 @@
 	)
 	(wire
 		(pts
+			(xy 466.09 307.34) (xy 466.09 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bfb5348-813e-409a-87f9-0a21b789b587")
+	)
+	(wire
+		(pts
 			(xy 85.09 111.76) (xy 110.49 111.76)
 		)
 		(stroke
@@ -8212,16 +8222,6 @@
 			(type default)
 		)
 		(uuid "6cff97af-888c-4094-90d1-6d1af8379e55")
-	)
-	(wire
-		(pts
-			(xy 63.5 250.19) (xy 64.77 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d1ddfa8-3b11-4412-91fe-eb103a9b34c9")
 	)
 	(wire
 		(pts
@@ -11385,16 +11385,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 254) (xy 63.5 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c87bb5ff-ddf3-4b66-a8ef-92d002304701")
-	)
-	(wire
-		(pts
 			(xy 106.68 292.1) (xy 142.24 292.1)
 		)
 		(stroke
@@ -13321,6 +13311,28 @@
 			)
 		)
 	)
+	(global_label "LED_GND"
+		(shape input)
+		(at 466.09 307.34 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1ab19f7f-9c9c-4326-9ca0-392bb1885a44")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 466.09 317.9562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "col12"
 		(shape input)
 		(at 491.49 270.51 0)
@@ -14360,6 +14372,28 @@
 		(uuid "a581b524-ea17-4265-bff2-618a5e3b5407")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.7636 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_PWR"
+		(shape input)
+		(at 462.28 229.87 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a7d329eb-8294-4353-a512-5392770943be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 462.28 219.1329 90)
 			(effects
 				(font
 					(size 1.27 1.27)
