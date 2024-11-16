@@ -21,7 +21,7 @@
         clocks = <&system_clk>;
         clock-frequency = <4000000>;
 
-        clk-gpios = <&gpio0 2  GPIO_ACTIVE_HIGH>;     /* Must be defined. Select a pin that is not used elsewhere. */
+        clk-gpios  = <&gpio0 2 GPIO_ACTIVE_HIGH>; /* Must be defined. Select a pin that is not used elsewhere. */
         mosi-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>; /* Data In pin. */
         miso-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>; /* Must be defined. Re-using the DI pin is OK for WS2812. */
 
