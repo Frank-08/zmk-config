@@ -31,3 +31,7 @@
         };
     };
  };
+
+&led_strip {
+	chain-lenth = <25>;
+};
