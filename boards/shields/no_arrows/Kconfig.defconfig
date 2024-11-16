@@ -12,5 +12,4 @@ config ZMK_RGB_UNDERGLOW_EFF_START
     range 0 3
     default 2
 
-
 endif
