@@ -3,3 +3,4 @@
 
 config SHIELD_NO_ARROWS
     def_bool $(shields_list_contains,no_arrows)
+
