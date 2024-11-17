@@ -114,8 +114,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J1"
-				(at 0 22.86 0)
+			(property "Reference" "J"
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -123,14 +123,14 @@
 				)
 			)
 			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 20.32 0)
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
+			(property "Footprint" ""
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -150,24 +150,6 @@
 			)
 			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mouser" "179-UJ20CHGSMTP16TR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C2988369"
-				(at -422.91 -248.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -507,7 +489,7 @@
 				)
 			)
 			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
-				(pin power_out line
+				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
 					(name "GND"
@@ -543,7 +525,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 15.24 15.24 180)
 					(length 5.08)
 					(name "VBUS"
@@ -4392,12 +4374,6 @@
 		(uuid "eb21f3d6-b77f-4f78-9680-dc9f837a61ae")
 	)
 	(junction
-		(at 462.28 229.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb8ac3bc-0767-477d-b71f-1f4e1834f4e8")
-	)
-	(junction
 		(at 134.62 289.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4566,24 +4542,8 @@
 		(uuid "ffda1666-30f7-45d3-a340-8803ace326ee")
 	)
 	(no_connect
-		(at 466.09 234.95)
-		(uuid "0a3fed07-5418-488b-9551-32bbb261fdb7")
-	)
-	(no_connect
 		(at 438.15 261.62)
 		(uuid "156e2d67-15b7-425c-a537-35f8147161b8")
-	)
-	(no_connect
-		(at 466.09 257.81)
-		(uuid "1e911996-f518-4e45-9940-2b4e6c9dfd8b")
-	)
-	(no_connect
-		(at 491.49 229.87)
-		(uuid "318d9f0b-ceb7-4c4e-bb6f-bc6735579b2b")
-	)
-	(no_connect
-		(at 491.49 232.41)
-		(uuid "590aae83-b645-4f78-9348-156b8916fda7")
 	)
 	(no_connect
 		(at 438.15 264.16)
@@ -4592,14 +4552,6 @@
 	(no_connect
 		(at 415.29 271.78)
 		(uuid "a7a6e559-6b2f-4f8e-b798-f842bb1a5662")
-	)
-	(no_connect
-		(at 466.09 260.35)
-		(uuid "aebdb174-f49b-4039-8ee3-ea15f0eec1b7")
-	)
-	(no_connect
-		(at 466.09 232.41)
-		(uuid "e3c30dca-d0d8-41d6-8b0b-767f6e7ef9fe")
 	)
 	(wire
 		(pts
@@ -4923,7 +4875,7 @@
 	)
 	(wire
 		(pts
-			(xy 453.39 229.87) (xy 462.28 229.87)
+			(xy 453.39 229.87) (xy 466.09 229.87)
 		)
 		(stroke
 			(width 0)
@@ -9663,16 +9615,6 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 229.87) (xy 466.09 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9400e4e8-d4f8-4efd-9005-65f0a4413e09")
-	)
-	(wire
-		(pts
 			(xy 266.7 363.22) (xy 266.7 361.95)
 		)
 		(stroke
@@ -11453,16 +11395,6 @@
 	)
 	(wire
 		(pts
-			(xy 462.28 215.9) (xy 462.28 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9e85cec-9c6b-4453-9bd7-c518c54581df")
-	)
-	(wire
-		(pts
 			(xy 34.29 29.21) (xy 34.29 30.48)
 		)
 		(stroke
@@ -13183,28 +13115,6 @@
 			)
 		)
 	)
-	(global_label "LED_DTA_IN"
-		(shape input)
-		(at 491.49 234.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0223c133-ea8c-48b0-b74e-c31fb905e121")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 504.4648 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED_PWR"
 		(shape input)
 		(at 285.75 242.57 0)
@@ -14039,28 +13949,6 @@
 			)
 		)
 	)
-	(global_label "LED_CLK"
-		(shape input)
-		(at 491.49 278.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "803e0abb-469a-41e9-bcf4-918b159b8b82")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 501.8038 278.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED_GND"
 		(shape input)
 		(at 22.86 402.59 180)
@@ -14495,7 +14383,7 @@
 	)
 	(global_label "LED_PWR"
 		(shape input)
-		(at 462.28 215.9 0)
+		(at 462.28 229.87 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14505,7 +14393,7 @@
 		)
 		(uuid "a7d329eb-8294-4353-a512-5392770943be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 473.0171 215.9 0)
+			(at 462.28 219.1329 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14680,28 +14568,6 @@
 		(uuid "c26c542c-13db-475a-a4a6-8c445d6d57bb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.2884 292.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED-Status IN"
-		(shape input)
-		(at 491.49 237.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5cdeec5-162b-449a-a333-9662207b1190")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 507.7304 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
