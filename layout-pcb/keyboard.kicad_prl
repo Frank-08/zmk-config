@@ -1,25 +1,25 @@
 {
   "board": {
     "active_layer": 0,
-    "active_layer_preset": "Front Layers",
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.6,
-      "pads": 1.0,
-      "tracks": 1.0,
+      "images": 0.10999999940395355,
+      "pads": 0.2199999988079071,
+      "tracks": 0.41999998688697815,
       "vias": 1.0,
-      "zones": 0.6
+      "zones": 0.41999998688697815
     },
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -34,6 +34,7 @@
       3,
       4,
       5,
+      7,
       8,
       9,
       10,
@@ -61,14 +62,11 @@
       34,
       35,
       36,
+      37,
       39,
       40
     ],
-<<<<<<< Updated upstream
-    "visible_layers": "00290aa_80000003",
-=======
-    "visible_layers": "00290aa_00000001",
->>>>>>> Stashed changes
+    "visible_layers": "0005050_80000001",
     "zone_display_mode": 0
   },
   "git": {
