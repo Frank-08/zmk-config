@@ -1,6 +1,6 @@
 {
-    "x_build_size" : 200,
-    "y_build_size" : 200,
+    "x_build_size" : 150,
+    "y_build_size" : 150,
 
     "kerf" : 0.01,
 
