@@ -2,7 +2,7 @@
     "x_build_size" : 150,
     "y_build_size" : 150,
 
-    "kerf" : 0.01,
+    "kerf" : 0.1,
 
     "switch_type": "mx",
     "stabilizer_type": "cherry",
@@ -15,8 +15,8 @@
     "support_bar_height" : 3.0,
     "support_bar_width" : 3.0,    
 
-    "top_margin" : 18,
-    "bottom_margin" : 10,
+    "top_margin" : 10,
+    "bottom_margin" : 15,
     "left_margin" : 10,
     "right_margin" : 10,
 
