@@ -19,7 +19,7 @@
         // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \ |  7  | 8 | 9 | +        |
         // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER|  4  | 5 | 6 |          |
         // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT   |  1  | 2 | 3 | ENTER    |
-        // |  CTL  |  CMD  |  ALT  |            SPACE               | ALT | CMD |  @  | CTRL|     0   | . |          |
+        // |  CTL  |  CMD  |  ALT  |            SPACE               | ALT | CMD |  RGB  | CTRL|     0   | . |          |
         // ---------------------------------------------------------------------------------------------------------------
             bindings = <
             &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
@@ -27,7 +27,7 @@
             &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp   I   &kp  O  &kp   P  &kp LBKT &kp RBKT  &kp BSLH &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_PLUS
             &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp   K   &kp  L  &kp SEMI &kp SQT           &kp RET &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6
             &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_ENTER
-            &kp LCTRL &kp LCMD &kp LALT               &kp SPACE                 &kp  RALT  &kp  RCMD  &kp K_LOCK &kp  RCTRL &kp KP_NUMBER_0 &kp KP_DOT
+            &kp LCTRL &kp LCMD &kp LALT               &kp SPACE                 &kp  RALT  &kp  RCMD  &kp RGB_TOG &kp  RCTRL &kp KP_NUMBER_0 &kp KP_DOT
             >;
         };
     };
