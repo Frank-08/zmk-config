@@ -27,7 +27,7 @@
             &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp   I   &kp  O  &kp   P  &kp LBKT &kp RBKT  &kp BSLH &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_PLUS
             &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp   K   &kp  L  &kp SEMI &kp SQT           &kp RET &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6
             &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_ENTER
-            &kp LCTRL &kp LCMD &kp LALT               &kp SPACE                 &kp  RALT  &kp  RCMD  &rgb_ug RGB_TOG &kp  RCTRL &kp KP_NUMBER_0 &kp KP_DOT
+            &kp LCTRL &kp LALT &kp LCMD               &kp SPACE                 &kp  RCMD  &kp  RALT  &rgb_ug RGB_TOG &kp  RCTRL &kp KP_NUMBER_0 &kp KP_DOT
             >;
         };
     };
