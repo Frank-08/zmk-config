@@ -15,7 +15,7 @@
     "support_bar_height" : 3.0,
     "support_bar_width" : 3.0,    
 
-    "top_margin" : 10,
+    "top_margin" : 15,
     "bottom_margin" : 15,
     "left_margin" : 10,
     "right_margin" : 10,
