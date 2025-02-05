@@ -15,7 +15,7 @@
         default_layer { // Layer 0
         // --------------------------------------------------------------------------------------------------------------
         // | ESC | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12                                          |
-        // | ` |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BSPC | RGB | / | * |-         |
+        // | ` |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BSPC | RGB(M1) | / | * |-         |
         // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \ |  7  | 8 | 9 | +        |
         // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER|  4  | 5 | 6 |          |
         // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT   |  1  | 2 | 3 | ENTER    |
@@ -26,7 +26,7 @@
             &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp   N8  &kp  N9 &kp  N0  &kp MINUS &kp EQUAL &kp BSPC &rgb_ug RGB_TOG &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
             &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp   I   &kp  O  &kp   P  &kp LBKT &kp RBKT  &kp BSLH &kp HOME &kp UP_ARROW &kp PAGE_UP &kp KP_PLUS
             &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp   K   &kp  L  &kp SEMI &kp SQT           &kp RET &kp LEFT_ARROW &kp KP_N5 &kp RIGHT_ARROW
-            &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT &kp END &kp DOWN_ARROW &kp PAGE_DOWN &kp KP_ENTER
+            &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT &kp END &kp DOWN_ARROW &kp PAGE_DOWN &kp RET
             &kp LCTRL &kp LALT &kp LCMD               &kp SPACE                 &kp  RCMD  &kp  RALT &kp  RCTRL &kp GLOBE &kp INSERT &kp DELETE
             >;
         };
